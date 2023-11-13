@@ -128,7 +128,7 @@ Future features:
 
 Google Calendar API: The Google Calendar API is a RESTful API that can be accessed through explicit HTTP
 
-![Google Dev docs for Node.js](https://developers.google.com/calendar/api/quickstart/nodejs)
+[Google Dev docs for Node.js](https://developers.google.com/calendar/api/quickstart/nodejs)
 
 Payment Authorization APIs:
 
@@ -148,11 +148,11 @@ Google Calendar API requires API authorization
 
 ---
 
-###Payment Gateway Integration:
+# Payment Gateway Integration:
 
 Description: Payment gateways are third-party services that handle the communication between the application, the user, and the financial institution.
 
-###Authorization Process:
+# Authorization Process:
 
 1. The user initiates a payment.
 
@@ -162,7 +162,7 @@ Description: Payment gateways are third-party services that handle the communica
 
 4. The result (authorization or decline) is sent back to the application.
 
-###Tokenization:
+### Tokenization:
 
 Tokenization is the process of replacing sensitive payment information (e.g., credit card numbers) with a unique token. This token is used for transaction authorization.
 Authorization Process:
@@ -171,11 +171,11 @@ Authorization Process:
 
 2. The token is used for subsequent transactions, reducing the risk associated with storing sensitive information.
 
-###3D Secure (3DS):
+### 3D Secure (3DS):
 
 3D Secure is an additional layer of security for online credit and debit card transactions. It adds an extra authentication step, often involving a one-time password (OTP) or biometric verification.
 
-###Authorization Process:
+### Authorization Process:
 
 1. After submitting payment details, the user is redirected to a 3D Secure page for additional authentication.
 
