@@ -2,15 +2,15 @@
 
 ## Overview
 
-Explore the Naramata Vineyard website, designed as the operational center for our esteemed Bed & Breakfast, owned by my parents. This platform facilitates seamless booking processes for guests, reflecting a commitment to excellence in hospitality. Engage with the sophisticated interface, ensuring a smooth experience for both guests and proprietors alike, as we invite you to discover the unparalleled charm of our B&B."
+Explore the Naramata Vineyard website, designed as the operational center for our esteemed Bed & Breakfast, owned by my parents. This platform facilitates seamless booking processes for guests, reflecting a commitment to excellence in hospitality. Engage with an easy to use interface, ensuring a smooth experience for both guests and proprietors alike, as we invite you to discover the unparalleled charm of our B&B.
 
 ### Problem
 
-In response to the increasing fees imposed by platforms like Airbnb and VRBO, my parents have chosen a strategic path to independence. This decision allows them greater control over their business operations, avoiding the escalating fees associated with booking platforms. Taking charge of their business gives my parents more freedom and create a guest experience that's more to their style.
+In response to the increasing fees imposed by platforms like Airbnb and VRBO, my parents have chosen a new path outside of these services. This decision allows them greater control over their business operations, avoiding the escalating fees associated with booking platforms. Taking charge of their business gives my parents more freedom and create a guest experience that's more to their style.
 
 ### User Profile
 
-Residing in a sought-after tourist destination, where demand for accommodations surges during the spring, summer, and fall seasons, this initiative will play a pivotal role in facilitating lodging arrangements for guests exploring the Okanagan region.
+Residing in a sought-after tourist destination, where demand for accommodations surges during the spring, summer, and early fall seasons, this initiative will play a pivotal role in facilitating lodging arrangements for guests exploring the Okanagan region.
 
 Vacation planning and bookings can be stressful; my aim is to streamline this process for guests and alleviate the operational burden on my parents managing the business. The objective is to enhance overall efficiency and ensure a seamless experience for both travelers and proprietors alike.
 
@@ -104,7 +104,7 @@ Vacation planning and bookings can be stressful; my aim is to streamline this pr
 
 7. **Data Analytics and Business Intelligence:**
 
-   - **Tools:** Google Analytics,
+   - **Tools:** Google Analytics
 
 8. **Payment Gateways:**
 
@@ -217,4 +217,4 @@ Once our first season is complete, it will be a great time to reflect on what fe
 
 2. More advanced messaging services for chats, such an an AI chat bot guests can communicate with before booking, and live chats/messages once guests book
 
-3. Mobile App, once guests have paid for their reservation, a link to a private app would be sent via email. This app would allow them to have a the private messaging service, online bookning, weather information, local activities etc..
+3. Mobile App, once guests have paid for their reservation, a link to a private app would be sent via email. This app would allow them to have access to a private messaging service, online service booking, weather information, local activities etc..
