@@ -146,13 +146,11 @@ We have not yet found a payment provider we wish to use at this time
 
 Google Calendar API requires API authorization
 
----
-
-# Payment Gateway Integration:
+### Payment Gateway Integration:
 
 Description: Payment gateways are third-party services that handle the communication between the application, the user, and the financial institution.
 
-# Authorization Process:
+### Authorization Process:
 
 1. The user initiates a payment.
 
