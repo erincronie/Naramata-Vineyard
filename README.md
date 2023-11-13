@@ -1,5 +1,3 @@
-# Naramata-Vineyard
-
 Naramata Vineyard
 
 # Naramata Vineyard
@@ -89,43 +87,44 @@ Vacation planning and bookings can be stressful; my aim is to streamline this pr
    - **Languages:** Node.js (JavaScript)
    - **Frameworks:** Express.js (Node.js)
 
-3. **Mobile App Development:**
+3. **Database Management:**
 
-   - **Languages:** React Native (cross-platform)
+   - **Databases:** MySQL
+   - **Query Languages:** SQL
 
-4. **Database Management:**
-
-   - **Databases:** MySQL, PostgreSQL, MongoDB
-   - **Query Languages:** SQL, NoSQL
-
-5. **APIs (Application Programming Interfaces):**
+4. **APIs (Application Programming Interfaces):**
 
    - **RESTful APIs** for communication between different components of the system.
 
-6. **Version Control:**
+5. **Version Control:**
 
    - **Git** for tracking changes in codebase
 
-7. **Security:**
+6. **Security:**
 
    - **SSL/TLS** for secure communication
 
-8. **Data Analytics and Business Intelligence:**
+7. **Data Analytics and Business Intelligence:**
 
    - **Tools:** Google Analytics,
 
-9. **Payment Gateways:**
+8. **Payment Gateways:**
 
    - Integration with payment gateways using their respective APIs.
 
 Future features:
 
-10. **Cloud Computing:**
+9. **Cloud Computing:**
 
-    - **Platforms:** Google Cloud Platform
+   - **Platforms:** Google Cloud Platform
 
-11. **Machine Learning and Data Science (for personalized recommendations, pricing strategies, etc.):**
+10. **Machine Learning and Data Science (for personalized recommendations, pricing strategies, etc.):**
+
     - **Languages:** Possibly Python
+
+11. **Mobile App Development:**
+
+- **Languages:** React Native (cross-platform)
 
 ### Endpoints
 
@@ -142,22 +141,34 @@ The Okanagan is a seasonal destination, the website will need to be functioning 
 two weeks time:
 
 1. should have the main portion of the website, the designs with HTML and CSS
-   December:
+
+December:
+
 1. Have booking calendar intergrated and functioning through APIs
-1. Add weather API
-   January
+2. Add weather API
+
+January
+
 1. Find safe payment payment processors to have the feature up and running
-   February:
+
+February:
+
 1. Create database to hold booking details, customer accounts are not required at this time
-1. Once payment processors, data base and calendar are functioning - guests will be able to book their reservations
-1. Main booking communication with be through email for the first year
-   October:
+
+2. Once payment processors, data base and calendar are functioning - guests will be able to book their reservations
+
+3. Main booking communication with be through email for the first year
+
+October:
+
 1. with the summer over, take the time to review how the summer went and any new features we may need. ie. will it be more benefical to have customer accounts?
 
 ## Nice-to-haves
 
 Once our first season is complete, it will be a great time to reflect on what features the website may need for the next season:
 
-1. Customer accounts
-2. Open Table (other booking systems) intergrations to book dining/event reservations online
-3. More advanced messaging services for chats, such an an AI chat bot guests can communicate with before booking, and live chats/messages once guests book
+1. Open Table (other booking systems) intergrations to book dining/event reservations online
+
+2. More advanced messaging services for chats, such an an AI chat bot guests can communicate with before booking, and live chats/messages once guests book
+
+3. Mobile App, once guests have paid for their reservation, a link to a private app would be sent via email. This app would allow them to have a the private messaging service, online bookning, weather information, local activities etc..
