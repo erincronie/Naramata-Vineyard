@@ -102,15 +102,15 @@ Vacation planning and bookings can be stressful; my aim is to streamline this pr
 
    - **SSL/TLS** for secure communication
 
-7. **Data Analytics and Business Intelligence:**
-
-   - **Tools:** Google Analytics
-
-8. **Payment Gateways:**
+7. **Payment Gateways:**
 
    - Integration with payment gateways using their respective APIs.
 
 Future features:
+
+8. **Data Analytics and Business Intelligence:**
+
+   - **Tools:** Google Analytics
 
 9. **Cloud Computing:**
 
