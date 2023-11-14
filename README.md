@@ -219,4 +219,4 @@ Once our first season is complete, it will be a great time to reflect on what fe
 
 ## Design
 
-![](Screenshot 2023-11-14 at 8.08.22 AM.png)
+![](color-palettes.png)
