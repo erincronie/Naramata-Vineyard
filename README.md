@@ -193,11 +193,9 @@ December:
 
 2. Add weather API
 
-January
+3. Find safe payment payment processors to have the feature up and running
 
-1. Find safe payment payment processors to have the feature up and running
-
-February:
+January:
 
 1. Create database to hold booking details, customer accounts are not required at this time
 
@@ -205,7 +203,7 @@ February:
 
 3. Main booking communication with be through email for the first year
 
-October:
+October 2024:
 
 1. with the summer over, take the time to review how the summer went and any new features we may need. ie. will it be more benefical to have customer accounts?
 
@@ -218,3 +216,7 @@ Once our first season is complete, it will be a great time to reflect on what fe
 2. More advanced messaging services for chats, such an an AI chat bot guests can communicate with before booking, and live chats/messages once guests book
 
 3. Mobile App, once guests have paid for their reservation, a link to a private app would be sent via email. This app would allow them to have access to a private messaging service, online service booking, weather information, local activities etc..
+
+## Design
+
+![](Screenshot 2023-11-14 at 8.08.22 AM.png)
