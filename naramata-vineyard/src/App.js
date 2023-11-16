@@ -1,6 +1,7 @@
-import Header from '../src/components/Header/Header';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes } from 'react-router-dom';
 import '../src/styles/_global.scss';
+import Header from '../src/components/Header/Header';
+import Footer from '../src/components/Footer/Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <Routes>
    
     </Routes>
+    <Footer/>
   </BrowserRouter>
   );
 }
