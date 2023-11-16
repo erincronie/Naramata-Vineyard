@@ -1,11 +1,15 @@
 import Header from '../src/components/Header/Header';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import '../src/styles/_global.scss';
 
 function App() {
   return (
-    <Router>
-    
-    </Router>
+    <BrowserRouter>
+    <Header />
+    <Routes>
+   
+    </Routes>
+  </BrowserRouter>
   );
 }
 
