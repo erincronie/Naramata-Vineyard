@@ -2,7 +2,10 @@
 @import '../../styles/partials/_mixins';
 
 .homepage {
-
+    display: flex;
+    flex-direction: column;
+    background-color: $accent-color;
+   
     &__title {
         font-family: $secondary-font;
         font-size: 2rem;
@@ -12,5 +15,11 @@
         font-family: $main-font;
         font-size: .73rem;
         margin: 1rem;
+    }
+
+    &__image {
+        height: 300px;
+        margin:  .5rem auto;
+        border: .5rem solid $secondary-color;
     }
 }
