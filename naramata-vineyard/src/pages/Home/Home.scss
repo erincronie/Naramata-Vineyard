@@ -1,0 +1,16 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.homepage {
+
+    &__title {
+        font-family: $secondary-font;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    &__bio {
+        font-family: $main-font;
+        font-size: .73rem;
+        margin: 1rem;
+    }
+}
