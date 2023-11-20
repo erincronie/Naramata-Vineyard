@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Slideshow/Slideshow.scss';
-import { slide1 } from '../../../assets/images/pool-and-lake.png'
+import { slide1 } from '../../assets/images/pool-and-lake.png'
 
 const Slideshow = () => {
     return (
@@ -9,3 +9,5 @@ const Slideshow = () => {
         </section>
     )
 }
+
+export default Slideshow
