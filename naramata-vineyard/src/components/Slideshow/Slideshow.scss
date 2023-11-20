@@ -1,0 +1,13 @@
+.slideshow {
+    &__container {
+      display: flex;
+    }
+  
+    &__img {
+      height: 40vh;
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+  }
+  
