@@ -10,10 +10,16 @@
     font-family: $main-font;
 
     &__title {
-       font-size: 2rem; 
+       font-size: 1rem;
+        @include tablet {
+            font-size: 2rem;
+        }
     }
 
     &__lanes {
-        font-size: 1rem;
+        font-size: 10rem;
+            @include tablet {
+                font-size: 1rem;
+            }
     }
 }
