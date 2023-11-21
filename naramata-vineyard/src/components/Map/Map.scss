@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem;
+    margin: 1rem;
     max-width: 90vw;
     font-family: $main-font;
 
@@ -14,6 +14,6 @@
     }
 
     &__lanes {
-        font-size: 10rem;
+        font-size: 1rem;
     }
 }
