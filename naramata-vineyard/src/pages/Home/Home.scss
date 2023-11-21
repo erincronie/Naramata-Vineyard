@@ -10,18 +10,28 @@
         font-family: $secondary-font;
         font-size: 1.5rem;
         margin: .5rem;
+            @include tablet {
+                font-size: 3rem;
+                margin: 1rem;
+            }
     }
     &__bio {
         font-family: $main-font;
         font-size: .75rem;
         margin: .5rem;
-        max-width: 280px;
+            @include tablet {
+                font-size: 1.5rem;
+                margin: 1rem;
+            }
     }
 
     &__image {
-        height: 200px;
+        width: 30vw;
         margin:  .5rem auto;
         border: .25rem solid $secondary-color;
+            @include tablet {
+                width: 80vw;
+            }
         
     }
 }
