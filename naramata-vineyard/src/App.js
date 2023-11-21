@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
 import Gallery from './pages/Gallery/Gallery';
 import Button from './components/BackToTopButton/BackToTopButton';
+import Hosts from './pages/MeetTheHosts/MeetTheHosts'
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/hosts" element={<Hosts />} />
       </Routes>
       <Button />
       <Footer />
