@@ -1,13 +1,11 @@
-.slideshow {
-    &__container {
-      display: flex;
-    }
-  
-    &__img {
-      height: 60vh;
-      width: 100%;
-      flex-shrink: 0;
-    }
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
 
+.slideshow {
+  width: 100%;
+
+  &__images {
+    max-height: 50vh;
+    width: 100vw;
   }
-  
+}
