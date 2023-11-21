@@ -18,8 +18,9 @@
     }
 
     &__image {
-        height: 300px;
+        height: 200px;
         margin:  .5rem auto;
-        border: .5rem solid $secondary-color;
+        border: .25rem solid $secondary-color;
+        
     }
 }
