@@ -1,0 +1,19 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+    max-width: 90vw;
+    font-family: $main-font;
+
+    &__title {
+       font-size: 2rem; 
+    }
+
+    &__lanes {
+        font-size: 10rem;
+    }
+}
