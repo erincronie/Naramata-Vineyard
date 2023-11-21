@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import '../Slideshow/Slideshow.scss';
+import './Slideshow.scss'; 
 import slide1 from '../../assets/images/pool-and-lake.png';
 import slide2 from '../../assets/images/vineyard-overlooking-lake.png';
 import slide3 from '../../assets/images/vineyard-leafs.png';
 import slide4 from '../../assets/images/cat.png';
 import slide5 from '../../assets/images/night-buddah.png';
 import slide6 from '../../assets/images/sunset-barrels.png';
+
 
 const Slideshow = () => {
   const slides = [slide1, slide2, slide3, slide4, slide5, slide6];
@@ -15,8 +16,8 @@ const Slideshow = () => {
     const nextSlide = () => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     };
-  
-    const intervalId = setInterval(nextSlide, 4000)
+
+    const intervalId = setInterval(nextSlide, 3000);
 
     return () => clearInterval(intervalId);
   }, [currentSlide, slides.length]);
@@ -30,6 +31,6 @@ const Slideshow = () => {
       />
     </div>
   );
-  }  
+};
 
 export default Slideshow;
