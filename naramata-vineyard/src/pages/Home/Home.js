@@ -2,7 +2,7 @@ import '../Home/Home.scss'
 import React from "react";
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Map from '../../components/Map/Map';
-import Pool from '../../assets/images/gradient-pool-homepage.jpeg';
+import Pool from '../../assets/images/gradient-pool-homepage.png';
 import Amenities from '../../components/Amenities/Amenities'
 
 const Home = () => {
