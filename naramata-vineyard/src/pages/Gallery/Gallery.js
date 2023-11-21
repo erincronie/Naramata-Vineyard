@@ -21,5 +21,7 @@ const Gallery = () => {
     </section>
   );
 };
-// plans to use JavaScript to make the gallery interactive once we have images
+
 export default Gallery;
+
+// plans to use JavaScript to make the gallery interactive once we have images

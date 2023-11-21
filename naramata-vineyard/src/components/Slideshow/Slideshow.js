@@ -6,7 +6,6 @@ import slide3 from '../../assets/images/vineyard-leafs.png';
 import slide4 from '../../assets/images/cat.png';
 import slide5 from '../../assets/images/night-buddah.png';
 import slide6 from '../../assets/images/sunset-barrels.png';
-import Button from '../../components/BackToTopButton/BackToTopButton'
 
 
 const Slideshow = () => {
@@ -30,7 +29,6 @@ const Slideshow = () => {
         src={slides[currentSlide]}
         alt={`Slide ${currentSlide + 1}`}
       />
-      <Button />
     </div>
   );
 };
