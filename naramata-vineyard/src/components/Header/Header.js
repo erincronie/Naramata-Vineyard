@@ -13,9 +13,9 @@ const Header = () => {
     <div className="nav__list-section">
         <ul className="nav__list">
             <li className="nav__item link"><Link to="/">Home</Link></li>
-            <li className="nav__item link"><Link to="/Gallery">Gallery</Link></li>
-            <li className="nav__item link"><Link to="/Hosts">Meet the Hosts</Link></li>
-            <li className="nav__item link"><Link to="/BookNow">Book Now</Link></li>
+            <li className="nav__item link"><Link to="/gallery">Gallery</Link></li>
+            <li className="nav__item link"><Link to="/hosts">Meet the Hosts</Link></li>
+            <li className="nav__item link"><Link to="/booknow">Book Now</Link></li>
 
         </ul>
     </div>
