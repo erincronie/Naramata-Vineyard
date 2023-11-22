@@ -1,0 +1,73 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.react-calendar {
+  font-family: $main-font;
+  border: 1px solid $secondary-color;
+  width: 90vw;
+    
+  &__navigation {
+    background-color: $accent-color;
+  }
+
+  &__navigation__label {
+    background-color: $accent-color;
+    border: none;
+    font-size: 2rem;
+    margin: 0 auto;
+    &:hover {
+        background-color:$secondary-color;
+    }
+  }
+
+  &__navigation__arrow {
+    background-color: $accent-color;
+    border: none;
+    font-size: 2rem;
+    margin: .25rem;
+  }
+
+  &__navigation__prev2-button,
+  &__navigation__next2-button {
+    display: none;
+  }
+
+  &__month-view__weekdays {
+    background-color: $secondary-color;
+    font-size: 1rem;
+  }
+
+  &__tile {
+    background-color: $accent-color;
+    color: black;
+    border: 1px solid $accent-color;
+    font-size: 1.5rem;
+    height: 4vh;
+    width: 6vw;
+        @include tablet {
+            height: 10vh;
+            width: 10vh;
+        }
+    &:hover {
+        background-color:$secondary-color;
+    }
+  }
+  
+  &__tile--active {
+    background-color: $primary-color;
+    color: white;
+  }
+}
+
+.myCalendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $main-font;
+
+    &__title {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+   
+}
