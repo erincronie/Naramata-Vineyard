@@ -40,7 +40,13 @@
         border: .25rem solid $secondary-color;
             @include tablet {
                 width: 80vw;
-            }
+        } 
+    }
+
+    &__suite-description {
+        font-family: $main-font;
+        font-size: 1rem;
+        margin: 1rem;
         
     }
 }
