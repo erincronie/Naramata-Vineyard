@@ -21,7 +21,6 @@
             }
     }
     
-
     &__section {
         display: flex;
         flex-direction: column;
@@ -41,13 +40,6 @@
         font-size: .75rem;
             @include tablet {
                 font-size: 1.25rem;
-            }
-    }
-
-    &__icons {
-        height: 40px;
-            @include tablet {
-                height: 60px;
             }
     }
 }
