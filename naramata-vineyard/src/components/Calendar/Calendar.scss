@@ -3,10 +3,11 @@
 
 .react-calendar {
   font-family: $main-font;
-  border: 1px solid $secondary-color;
+  border: none;
   width: 90vw;
     
   &__navigation {
+    display: flex;
     background-color: $accent-color;
   }
 
@@ -15,9 +16,6 @@
     border: none;
     font-size: 2rem;
     margin: 0 auto;
-    &:hover {
-        background-color:$secondary-color;
-    }
   }
 
   &__navigation__arrow {
@@ -25,6 +23,11 @@
     border: none;
     font-size: 2rem;
     margin: .25rem;
+    width: 50px;
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__navigation__prev2-button,
@@ -43,7 +46,7 @@
     border: 1px solid $accent-color;
     font-size: 1.5rem;
     height: 4vh;
-    width: 6vw;
+    width: 4vw;
         @include tablet {
             height: 10vh;
             width: 10vh;
@@ -59,15 +62,30 @@
   }
 }
 
+
 .myCalendar {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: $main-font;
+    background-image: url(../../assets/images/gradient-pool-homepage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    
 
     &__title {
         font-size: 2rem;
         margin: 1rem 0;
+    }
+
+    &__selected-date {
+        background-color: white;
+        padding: 1rem 2rem;
+        margin: 1rem;
+        width: 80vw;
+        font-size: 1.5rem;
+        
     }
    
 }

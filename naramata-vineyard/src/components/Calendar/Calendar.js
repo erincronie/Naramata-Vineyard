@@ -3,33 +3,44 @@ import Calendar from 'react-calendar';
 import './Calendar.scss';
 
 const MyCalendar = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [selectedRange, setSelectedRange] = useState([null, null]);
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
+  const handleDateChange = (dates) => {
+    setSelectedRange(dates);
   };
 
   const defaultActiveStartDate = new Date();
-
-  // Set minDate to January 1, 2023
   const minDate = new Date(2023, 0, 1);
-
-  // Set maxDate to December 31, 2024
   const maxDate = new Date(2024, 11, 31);
 
   return (
     <div className='myCalendar'>
-      <h1 className='myCalendar__title'>Select your stay</h1>
+      <h2 className='myCalendar__title'>Choose a date</h2>
+      <p className='myCalendar__selected-date'>
+        {selectedRange[0] && selectedRange[1] ? (
+          <>
+            Selected Date Range: {selectedRange[0].toDateString()} to {selectedRange[1].toDateString()}
+          </>
+        ) : (
+          selectedRange[0] ? `Selected Start Date: ${selectedRange[0].toDateString()}` : 'Select a start date'
+        )}
+      </p>
       <Calendar
         onChange={handleDateChange}
-        value={selectedDate}
+        selectRange
+        value={selectedRange}
         defaultActiveStartDate={defaultActiveStartDate}
         minDate={minDate}
         maxDate={maxDate}
       />
-      <p className='myCalendar__selected-date'>Selected Date: {selectedDate.toDateString()}</p>
+    
     </div>
   );
 }
 
 export default MyCalendar;
+
+
+
+
+
