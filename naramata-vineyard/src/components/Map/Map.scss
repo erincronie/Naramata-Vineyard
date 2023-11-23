@@ -16,10 +16,24 @@
         }
     }
 
+    &__container {
+        display: flex;
+        flex-direction: column;
+            @include tablet {
+                flex-direction: row;
+            }
+    }
+
     &__lanes {
         font-size: 1rem;
+        background-color: $secondary-color;
+        color: white;
+        margin: 0 auto;
             @include tablet {
                 font-size: 2rem;
+                height: 100px;
+                padding: 1rem;
+                margin: auto 0;
             }
     }
 }

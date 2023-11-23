@@ -4,18 +4,23 @@
 .amenities {
     display: flex;
     flex-direction: column;
-    background-color: $main-color;
-    margin: 2rem auto;
-    font-family: $main-font;
-    height: 300px;
-    width: 70vw;
-    overflow-y: auto;
-    border: none;
-        @include tablet {
-            height: 500px;
-            width: 80vw;
-            overflow-y: auto;
-        }
+    border: .25rem solid $secondary-color;
+    padding: 1rem;
+    
+    
+    &__container {
+        background-color: $main-color; 
+        font-family: $main-font;
+        height: 300px;
+        width: 70vw;
+        overflow-y: auto;
+            @include tablet {
+                height: 500px;
+                width: 80vw;
+                overflow-y: auto;
+            }
+    }
+    
 
     &__section {
         display: flex;
