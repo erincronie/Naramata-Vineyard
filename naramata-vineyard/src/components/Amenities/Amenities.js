@@ -17,6 +17,7 @@ import Map from '../../assets/icons/map.svg';
 const Amenities = () => {
     return (
 <div className='amenities'>
+    <div className='amenities__container'>
     <div className='amenities__section'>
         <img src={Bed} alt='bed icon' className='amenities__icons' />
         <h3 className='amenities__titles'>Bedroom Amenities:</h3>
@@ -126,6 +127,7 @@ const Amenities = () => {
         <h3 className='amenities__titles'>Local Recommendations:</h3>
         <p className='amenities__features'>Information on nearby attractions, restaurants, and activities</p>
         <p className='amenities__features'>Maps and guides</p>
+        </div>
     </div>
 </div>
 )

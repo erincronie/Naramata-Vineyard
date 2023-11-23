@@ -36,10 +36,30 @@
     &__image {
         width: 70vw;
         margin:  .5rem auto;
+        padding: .5rem;
         border: .25rem solid $secondary-color;
             @include tablet {
                 width: 80vw;
+        } 
+    }
+
+    &__suite-description {
+        font-family: $main-font;
+        font-size: .75rem;
+        margin: 1rem;
+            @include tablet {
+                font-size: 1.5rem;
+                margin: 2rem;
+
             }
         
+    }
+
+    &__image-placeholder {
+        height: 60vh;
+        width: 60vw;
+        margin: 1rem;
+        padding: .5rem;
+        border: .25rem solid $secondary-color;
     }
 }
