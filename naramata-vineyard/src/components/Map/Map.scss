@@ -24,6 +24,10 @@
             }
     }
 
+    &__details {
+        width: 80vw;
+    }
+
     &__lanes {
         font-size: 1rem;
         background-color: $secondary-color;
