@@ -4,14 +4,16 @@
 .hosts {
     display: flex;
     flex-direction: column;
-    font-family: $main-font;
-    margin: 1rem auto;
-        @include tablet {
-            max-width: 80vw;
-                @include desktop {
-                    max-width: 90vw;
+    @include mobile-body;
+            @include tablet {
+                @include tablet-body;
+                max-width: 80vw;
+                    @include tablet {
+                        @include desktop {
+                            max-width: 90vw;
+                        }
+                    }
                 }
-        }
 
     &__section {
         display: flex;
@@ -19,18 +21,16 @@
         align-items: center;
     }
     &__title {
-        font-size: 1.5rem;
-        margin: 1rem;
+        @include mobile-header;
             @include tablet {
-                font-size: 2rem;
+                @include tablet-header;
             }
     }
 
     &__paragraphs {
-        font-size: 1rem;
-        margin: 1rem;
+        @include mobile-body;
             @include tablet {
-                font-size: 1.5rem;
+                @include tablet-body;
             }
     }
 
