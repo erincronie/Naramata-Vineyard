@@ -8,17 +8,21 @@
     &__main-section {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__title {
         font-family: $secondary-font;
         font-size: 1rem;
         margin: 0 1rem;
+           @include tablet {
+            font-size: 2rem;
+           }
     }
 
     &__list {
         font-family: $main-font;
-        font-size: .75rem;
+        font-size: 1rem;
     }
 
     &__item {

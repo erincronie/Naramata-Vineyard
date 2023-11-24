@@ -4,16 +4,14 @@
 .amenities {
     display: flex;
     flex-direction: column;
-    border: .25rem solid $secondary-color;
+    @include border;
     padding: .5rem;
 
     &__container {
         background-color: $main-color; 
-        font-family: $main-font;
         height: 300px;
         width: 70vw;
         overflow-y: auto;
-
         @include tablet {
             height: 500px;
             width: 50vw;
@@ -34,10 +32,10 @@
     }
 
     &__titles {
-        font-size: 1rem;
+        @include mobile-header;
         margin: .25rem;
         @include tablet {
-            font-size: 2rem;
+            @include tablet-header;
         }
     }
 
@@ -46,9 +44,9 @@
     }
 
     &__features {
-        font-size: .75rem;
+        @include mobile-body;
         @include tablet {
-            font-size: 1.25rem;
+            @include tablet-body;
         }
     }
 }
