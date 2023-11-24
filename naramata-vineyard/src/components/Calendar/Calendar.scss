@@ -2,9 +2,12 @@
 @import '../../styles/partials/_mixins';
 
 .react-calendar {
-  font-family: $main-font;
+  @include mobile-header;
   border: none;
-  width: 90vw;
+  width: 90vw; 
+    @include tablet {
+      @include tablet-header;
+    }
     
   &__navigation {
     display: flex;
@@ -14,16 +17,22 @@
   &__navigation__label {
     background-color: $accent-color;
     border: none;
-    font-size: 2rem;
     margin: 0 auto;
+    @include mobile-body;
+      @include tablet {
+        @include tablet-body;
+      }
   }
 
   &__navigation__arrow {
     background-color: $accent-color;
     border: none;
-    font-size: 2rem;
     margin: .25rem;
     width: 50px;
+    @include mobile-body;
+      @include tablet {
+        @include tablet-body;
+      }
     transition: transform 0.2s ease;
     &:hover {
       transform: scale(1.1);
@@ -37,19 +46,24 @@
 
   &__month-view__weekdays {
     background-color: $secondary-color;
-    font-size: 1rem;
+    @include mobile-body;
+      @include tablet {
+        @include tablet-body;
+      }
   }
 
   &__tile {
     background-color: $accent-color;
     color: black;
-    border: 1px solid $accent-color;
+    border: none;
     font-size: 1.5rem;
     height: 4vh;
     width: 4vw;
+    @include mobile-body;
         @include tablet {
             height: 10vh;
             width: 10vh;
+            @include tablet-body;
         }
     &:hover {
         background-color:$secondary-color;
@@ -67,16 +81,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: $main-font;
-    background-image: url(../../assets/images/gradient-pool-homepage.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    @include mobile-header;
     width: 100vw;
     
 
     &__title {
-        font-size: 2rem;
-        margin: 1rem 0;
+        @include mobile-header;
+          @include tablet {
+            @include tablet-header;
+          }
     }
 
     &__selected-date {
@@ -84,7 +97,10 @@
         padding: 1rem 2rem;
         margin: 1rem;
         width: 80vw;
-        font-size: 1.5rem;
+        @include mobile-body;
+          @include tablet {
+            @include tablet-header;
+          }
         
     }
    
