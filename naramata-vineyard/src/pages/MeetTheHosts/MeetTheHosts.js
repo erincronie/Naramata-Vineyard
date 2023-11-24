@@ -8,7 +8,7 @@ const Hosts = () => {
         <article className='hosts'>            
             <div className='hosts__section'>
             <h2 className='hosts__title'>Meet the hosts</h2>
-                <p class='hosts__paragraphs'>Meet Christy and Allan, a couple whose love story has blossomed over 30 years, and who have also found a shared passion in cultivating the earth. Nestled in the picturesque landscapes of Naramata, British Columbia, their story takes a delightful turn as they have dedicated a significant part of their lives to crafting exquisite wines from their own Pinot Noir vineyard.</p>
+                <p class='hosts__paragraphs'>Meet Christy and Allan, a couple who have owned the property for 30 years, and who have also found a shared passion in cultivating the earth. Nestled in the picturesque landscapes of Naramata, British Columbia, their story takes a delightful turn as they have dedicated a significant part of their lives to enjoy taking care of their Pinot Noir vineyard.</p>
                 <div className='hosts__border-bottom'></div>
                 <img className='hosts__images' src={Host3} alt="wedding photo of the host couple" />
                 

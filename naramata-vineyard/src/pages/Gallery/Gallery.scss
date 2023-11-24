@@ -2,11 +2,13 @@
 @import '../../styles/partials/_mixins';
 
 .gallery {
+    
     &__title {
-        @include mobile-header;
-        @include tablet {
-            @include tablet-header;
-        }
+        @include section-title;
+    }
+
+    &__border-bottom {
+        @include border-bottom;
     }
 
     &__container {

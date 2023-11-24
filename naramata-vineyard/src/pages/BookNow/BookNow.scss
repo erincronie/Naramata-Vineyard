@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $accent-color;
+    background-color: $background-color;
     @include mobile-body;
             @include tablet {
                 @include tablet-body;

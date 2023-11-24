@@ -2,50 +2,66 @@
 @import '../../styles/partials/_mixins';
 
 .contactus {
+    background-color: $base-color;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 1rem auto;
-    width: 80vw;
+    width: 70vw;
     padding: 1rem;
     @include border;
     @include mobile-body;
-            @include tablet {
-                @include tablet-body;
-            }
+        @include tablet {
+            @include tablet-body;
+        }
 
-    &__container{
+    &__container {
+        background-color: $base-color;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-            @include tablet {
-                align-items: center;
-            }
-        
+        align-items: center;
+        align-content: center;
+
+        @include tablet {
+            align-items: center;
+        }
     }
 
     &__title {
-        @include mobile-header;
-            @include tablet {
-                @include tablet-header;
-            
-            }
+        color: $primary-text-color;
+        @include section-title;
+    }
+
+    &__border-bottom {
+        @include border-bottom;
     }
 
     &__input {
+        border: none;
+        background-color: $base-color;
+        color: $primary-text-color;
+        font-size: 1.5rem;
         margin: .5rem;
         padding: .5rem;
+        border-radius: 5px;
+        @include border-bottom;
+        width: 100%;
+    }
+
+    &__name-container {
+        display: flex;
+        flex-direction: column;
     }
 
     &__form-name,
     &__form-email,
     &__form-message {
         display: flex;
-    
+        align-items: center;
+        color: $primary-text-color;
     }
 
     &__form-button {
-        margin: 0 0 0 6rem;
-            @include tablet {
-                margin: 0 0 0 12rem;
-            }
+        display: flex;
+        justify-content: center;
     }
 
     &__button {
@@ -53,14 +69,25 @@
     }
 }
 
-#name,
+#firstName,
+#lastName,
 #email {
-    height: 25px;
-    width: 400px;
+    height: .5rem;
 }
 
 #message {
-    padding: 1rem;
-    height: 150px;
-    width: 320px;
+    height: auto;
+    max-height: 300px;
+    @include tablet {
+        height: 40vh;
+    }
 }
+
+label {
+    width: 8rem;
+        @include tablet {
+            width: 15rem;
+        }
+}
+
+
