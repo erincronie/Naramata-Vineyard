@@ -47,8 +47,7 @@
 
     &__border-bottom {
         width: 10vw;
-        border-bottom: 4px solid $secondary-color;
-        margin: 2rem;
+        @include border-bottom;
     }
 
     &__images {

@@ -54,6 +54,11 @@
   }
 
   @mixin border {
-    border: .25rem solid $secondary-color;
+    border: .10rem solid $secondary-color;
+  }
+
+  @mixin border-bottom {
+      border-bottom: 4px solid $secondary-color;
+        margin: 2rem;
   }
 

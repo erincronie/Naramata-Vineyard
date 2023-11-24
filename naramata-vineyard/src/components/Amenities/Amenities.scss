@@ -2,9 +2,20 @@
 @import '../../styles/partials/_mixins';
 
 .amenities {
-    @include border;
-    padding: .5rem;
-    margin: 1rem;
+    
+    &__main-title {
+        font-family: $secondary-font;
+        font-size: 1rem;
+            @include tablet {
+                font-size: 2rem;
+            }
+    }
+    
+    &__border{
+        @include border;
+        padding: .5rem;
+        margin: 1rem;
+    }
 
     &__container {
         display: flex;

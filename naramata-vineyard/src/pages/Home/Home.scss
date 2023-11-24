@@ -6,12 +6,15 @@
     flex-direction: column;
     background-color: white;
     align-items: center;
+    background-color: $accent-color;
 
-    &__upper-section {
-        @include tablet {
-            max-width: 80vw;
-            margin: 1rem;
-        }
+    &__upper-section,
+    &__lower-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 80vw;
     }
    
     &__title {
@@ -48,6 +51,11 @@
                 margin: 3rem;
             }
         
+    }
+
+    &__border-bottom {
+        @include border-bottom;
+        width: 10vw;
     }
 
     &__image-placeholder {

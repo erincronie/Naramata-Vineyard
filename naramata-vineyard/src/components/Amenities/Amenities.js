@@ -4,7 +4,9 @@ import '../Amenities/Amenities.scss';
 
 const Amenities = () => {
   return (
-    <div className='amenities'>
+    <section className='amenities'>
+    <h2 className='amenities__main-title'>Amenities</h2>
+    <div className='amenities__border'>
       <div className='amenities__container'>
         {Object.keys(amenitiesData).map((section, index) => {
           const iconString = amenitiesData[section].icon;
@@ -22,6 +24,7 @@ const Amenities = () => {
         })}
       </div>
     </div>
+    </section>
   );
 };
 
