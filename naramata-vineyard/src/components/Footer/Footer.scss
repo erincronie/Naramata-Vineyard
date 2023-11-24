@@ -12,17 +12,18 @@
     }
 
     &__title {
-        font-family: $secondary-font;
-        font-size: 1rem;
-        margin: 0 1rem;
-           @include tablet {
-            font-size: 2rem;
-           }
+       font-family: $secondary-font;
+       font-size: 1.5rem;
+        @include tablet {
+            font-size: 2rem
+        }
     }
 
     &__list {
-        font-family: $main-font;
-        font-size: 1rem;
+        @include mobile-body;
+            @include tablet {
+                @include tablet-body;
+            }
     }
 
     &__item {
@@ -34,8 +35,9 @@
     }
 
     &__rights {
-        font-family: $main-font;
-        font-size: .75rem;
-        padding: .5rem;
+        @include mobile-body;
+            @include tablet {
+                @include tablet-body;
+            }
     }
 }
