@@ -10,8 +10,10 @@ const Amenities = () => {
           const iconString = amenitiesData[section].icon;
           return (
             <div className='amenities__section' key={index}>
-              <div className='amenities__icons' dangerouslySetInnerHTML={{ __html: iconString }} />
-              <h3 className='amenities__titles'>{amenitiesData[section].title}:</h3>
+              <div className='amenities__title-div'>
+                <div className='amenities__icons' dangerouslySetInnerHTML={{ __html: iconString }} />
+                <h3 className='amenities__titles'>{amenitiesData[section].title}:</h3>
+              </div>
               {amenitiesData[section].features.map((feature, featureIndex) => (
                 <p className='amenities__features' key={featureIndex}>{feature}</p>
               ))}

@@ -6,21 +6,21 @@
     flex-direction: column;
     border: .25rem solid $secondary-color;
     padding: .5rem;
-    
-    
+
     &__container {
         background-color: $main-color; 
         font-family: $main-font;
         height: 300px;
         width: 70vw;
         overflow-y: auto;
-            @include tablet {
-                height: 500px;
-                width: 50vw;
-                overflow-y: auto;
-            }
+
+        @include tablet {
+            height: 500px;
+            width: 50vw;
+            overflow-y: auto;
+        }
     }
-    
+
     &__section {
         display: flex;
         flex-direction: column;
@@ -28,18 +28,27 @@
         margin: 1rem;
     }
 
+    &__title-div {
+        display: flex;
+        align-items: center;
+    }
+
     &__titles {
         font-size: 1rem;
         margin: .25rem;
-            @include tablet{
-                font-size: 2rem;
-            }
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__icons {
+        margin-right: 0.5rem; 
     }
 
     &__features {
         font-size: .75rem;
-            @include tablet {
-                font-size: 1.25rem;
-            }
+        @include tablet {
+            font-size: 1.25rem;
+        }
     }
 }
