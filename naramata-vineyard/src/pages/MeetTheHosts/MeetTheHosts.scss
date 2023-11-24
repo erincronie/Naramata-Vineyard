@@ -2,43 +2,61 @@
 @import '../../styles/partials/_mixins';
 
 .hosts {
+    background-color: $accent-color;
     display: flex;
     flex-direction: column;
+    align-items: center;
     @include mobile-body;
             @include tablet {
                 @include tablet-body;
-                max-width: 80vw;
-                        @include desktop {
-                            max-width: 90vw;
-                        }
+               
                     }
                 
 
     &__section {
+        background-color: $base-color;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
+        text-align: center;
+        width: 90vw;
     }
 
     &__title {
-        @include mobile-header;
+       font-family: $secondary-font;
+       color: white;
+       margin: 1rem;
+       font-size: 1rem;
+       padding: 0 0 30px 0;
+       border-bottom: 4px solid $secondary-color;
             @include tablet {
-                @include tablet-header;
+                font-size: 2rem;
             }
     }
 
     &__paragraphs {
+        color: white;
+        padding: 1rem;
+        width: 70vw;
         @include mobile-body;
+        margin: 1rem;
             @include tablet {
                 @include tablet-body;
             }
     }
 
+    &__border-bottom {
+        width: 10vw;
+        border-bottom: 4px solid $secondary-color;
+        margin: 2rem;
+    }
+
     &__images {
-        width:  80vw;
+        width: 60vw;
         margin: 1rem;
+        box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
         @include tablet { 
-            width:  40vw;
             margin: 1rem;
         }
     }
