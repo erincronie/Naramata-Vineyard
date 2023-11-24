@@ -16,3 +16,19 @@
     cursor: pointer;
     list-style: none;
   }
+
+  @mixin button {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: $secondary-color;
+    color: $primary-text-color;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        background-color: $accent-color;
+    }
+  }
+
+  @mixin border {
+    border: .25rem solid $secondary-color;
+  }
