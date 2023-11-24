@@ -27,17 +27,4 @@
     &__details {
         width: 80vw;
     }
-
-    &__lanes {
-        font-size: 1rem;
-        background-color: $secondary-color;
-        color: white;
-        margin: 0 auto;
-            @include tablet {
-                font-size: 2rem;
-                height: 80px;
-                padding: 1rem;
-                margin: auto 1rem;
-            }
-    }
 }
