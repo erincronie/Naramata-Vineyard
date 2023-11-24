@@ -4,20 +4,23 @@
 .findus {
     display: flex;
     justify-content: center;
-    font-family: $main-font;
 
     &__directions {
         margin: 1rem;
     }
 
     &__directions-title {
-        font-size: 1rem;
-        margin: 1rem;
+        @include mobile-header;
+        @include tablet {
+            @include tablet-header;
+        }
     }
 
     &__location {
-        font-size: 1rem;
-        margin: .5rem
+        @include mobile-body;
+        @include tablet {
+            @include tablet-body;
+        }
     }
     
     &__direction-map {
