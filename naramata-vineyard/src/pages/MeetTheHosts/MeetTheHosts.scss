@@ -8,18 +8,18 @@
             @include tablet {
                 @include tablet-body;
                 max-width: 80vw;
-                    @include tablet {
                         @include desktop {
                             max-width: 90vw;
                         }
                     }
-                }
+                
 
     &__section {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     &__title {
         @include mobile-header;
             @include tablet {

@@ -3,7 +3,7 @@ import './Slideshow.scss';
 import slide1 from '../../assets/images/pool-and-lake.png';
 import slide2 from '../../assets/images/vineyard-overlooking-lake.png';
 import slide3 from '../../assets/images/vineyard-leafs.png';
-import slide4 from '../../assets/images/cat.png';
+import slide4 from '../../assets/images/cat-2.jpeg';
 import slide5 from '../../assets/images/night-buddah.png';
 import slide6 from '../../assets/images/sunset-barrels.png';
 
