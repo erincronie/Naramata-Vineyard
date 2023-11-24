@@ -10,6 +10,30 @@
     }
   }
 
+  @mixin mobile-header {
+    font-family: $main-font;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  @mixin mobile-body {
+    font-family: $main-font;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  @mixin tablet-header {
+    font-family: $main-font;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  @mixin tablet-body {
+    font-family: $main-font;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
   @mixin navStyles {
     text-decoration: none;
     color: inherit;
@@ -32,3 +56,4 @@
   @mixin border {
     border: .25rem solid $secondary-color;
   }
+

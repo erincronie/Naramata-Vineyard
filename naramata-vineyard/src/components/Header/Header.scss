@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     background-color: $base-color;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
     color: $primary-text-color;
         @include tablet {
@@ -37,11 +37,9 @@
     }
 
     &__secondary-title {
-        font-family: $secondary-font;
-        font-size: 1.5rem;
-        padding: 0 0 1rem 0;
+        @include mobile-body;
             @include tablet {
-                padding: 0;
+                @include tablet-body;
             }
         
     }
@@ -50,20 +48,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: $main-font;
+        @include mobile-body;
            @include tablet {
             flex-direction: row;
-            margin: 1rem;
+            @include tablet-header;
            } 
     }
 
     &__item {
         @include navStyles;
-        padding: .25rem;
-        font-size: 1rem;
+        @include mobile-header;
             @include tablet {
-                font-size: 1rem;
-                margin: 0 1rem;
+                @include tablet-body;
+                margin: .5rem;
             }
         &:hover {
             color: $accent-color;

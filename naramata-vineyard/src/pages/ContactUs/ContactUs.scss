@@ -3,10 +3,13 @@
 
 .contactus {
     margin: 1rem auto;
-    font-family: $main-font;
     width: 80vw;
     padding: 1rem;
     @include border;
+    @include mobile-body;
+            @include tablet {
+                @include tablet-body;
+            }
 
     &__container{
         display: flex;
@@ -19,10 +22,10 @@
     }
 
     &__title {
-        font-size: 1rem;
-        margin: 1rem;
+        @include mobile-header;
             @include tablet {
-                font-size: 2rem;
+                @include tablet-header;
+            
             }
     }
 

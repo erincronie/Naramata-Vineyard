@@ -15,21 +15,15 @@
     }
    
     &__title {
-        font-family: $secondary-font;
-        font-size: 1.5rem;
-        margin: .5rem;
+        @include mobile-header;
             @include tablet {
-                font-size: 3rem;
-                margin: 1rem;
+                @include tablet-header;
             }
     }
     &__bio {
-        font-family: $main-font;
-        font-size: .75rem;
-        margin: .5rem;
+        @include mobile-body;
             @include tablet {
-                font-size: 1.5rem;
-                margin: 1rem;
+                @include tablet-body;
             }
     }
 
@@ -44,13 +38,9 @@
     }
 
     &__suite-description {
-        font-family: $main-font;
-        font-size: .75rem;
-        margin: 1rem;
+        @include mobile-body;
             @include tablet {
-                font-size: 1.5rem;
-                margin: 2rem;
-
+                @include tablet-body;
             }
         
     }

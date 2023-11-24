@@ -3,13 +3,10 @@
 
 .gallery {
     &__title {
-        font-family: $main-font;
-        font-size: 1.5rem;
-        margin: 1rem;
-    @include tablet {
-        font-size: 2rem;
-        margin: 1rem 2rem; 
-    }
+        @include mobile-header;
+        @include tablet {
+            @include tablet-header;
+        }
     }
 
     &__container {
