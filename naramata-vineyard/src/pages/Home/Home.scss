@@ -18,8 +18,8 @@
     }
    
     &__title {
-        font-family: $secondary-font;
-        font-size: 2rem;
+       @include section-title;
+        margin: 1rem;
             @include tablet {
                 font-size: 3rem;
             }

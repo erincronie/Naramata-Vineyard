@@ -2,16 +2,18 @@
 @import '../../styles/partials/_mixins';
 
 .amenities {
-    
     &__main-title {
-        font-family: $secondary-font;
-        font-size: 1rem;
-            @include tablet {
-                font-size: 2rem;
-            }
+        @include section-title;
+        @include tablet {
+            font-size: 2rem;
+        }
     }
-    
-    &__border{
+
+    &__border-bottom {
+        @include border-bottom;
+    }
+
+    &__border {
         @include border;
         padding: .5rem;
         margin: 1rem;
@@ -21,12 +23,11 @@
         display: flex;
         flex-direction: column;
         background-color: $main-color; 
-        height: 300px;
-        width: 70vw;
-        overflow-y: auto;
-        @include tablet {
-            height: 500px;
-            width: 50vw;
+        overflow-y: hidden; 
+        max-height: 500px; 
+        transition: max-height 0.3s ease-in-out; 
+        &.collapsed {
+            max-height: 100%; 
         }
     }
 
@@ -57,5 +58,16 @@
         @include tablet {
             @include tablet-body;
         }
+    }
+
+    &__expand-button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: #fff;
+        outline: none;
+        transition: background-color 0.3s;
     }
 }
