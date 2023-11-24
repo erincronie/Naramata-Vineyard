@@ -8,7 +8,7 @@ import Button from './components/BackToTopButton/BackToTopButton';
 import Hosts from './pages/MeetTheHosts/MeetTheHosts';
 import BookNow from './pages/BookNow/BookNow';
 import ContactUs from './pages/ContactUs/ContactUs';
-
+import FindUs from './pages/FindUs/FindUs';
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
         <Route path="/hosts" element={<Hosts />} />
         <Route path="/booknow" element={<BookNow />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/findus" element={<FindUs />} />
       </Routes>
       <Button />
       <Footer />
