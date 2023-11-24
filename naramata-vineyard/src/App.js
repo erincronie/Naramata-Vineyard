@@ -7,6 +7,7 @@ import Gallery from './pages/Gallery/Gallery';
 import Button from './components/BackToTopButton/BackToTopButton';
 import Hosts from './pages/MeetTheHosts/MeetTheHosts';
 import BookNow from './pages/BookNow/BookNow';
+import ContactUs from './pages/ContactUs/ContactUs';
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/hosts" element={<Hosts />} />
         <Route path="/booknow" element={<BookNow />} />
+        <Route path="/contactus" element={<ContactUs />} />
       </Routes>
       <Button />
       <Footer />
