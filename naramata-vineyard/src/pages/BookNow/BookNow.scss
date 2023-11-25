@@ -5,20 +5,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $background-color;
     @include mobile-body;
             @include tablet {
                 @include tablet-body;
             }
 
     &__rates {
-        width: 100vw;
-        padding: .5rem 1rem;
+        @include border;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem;
+        background-color: $base-color;
+        color: $primary-text-color;
+        width: 40vw;
+        @include mobile-body;
+            @include tablet {
+                @include tablet-body;
+            }
     }
 
     &__checkin,
     &__checkout {
         padding: .25rem .25rem .25rem 1rem;
+    }
+
+    &__selected-nights {
+        margin: 2rem;
+    }
+
+    &__total {
+        margin: 2rem 0;
+    }
+
+    &__button-confirm {
+        @include button;
     }
 
 }

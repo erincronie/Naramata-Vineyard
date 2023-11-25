@@ -56,12 +56,11 @@
     background-color: $background-color;
     color: black;
     border: none;
-    font-size: 1.5rem;
-    height: 4vh;
+    height: 8vh;
     width: 4vw;
     @include mobile-body;
         @include tablet {
-            height: 10vh;
+            height: 14vh;
             width: 10vh;
             @include tablet-body;
         }

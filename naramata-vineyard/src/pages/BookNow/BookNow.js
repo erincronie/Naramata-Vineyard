@@ -35,6 +35,7 @@ const BookNow = () => {
           <p className='booknow__selected-nights'>{nights} {nights === 1 ? 'night' : 'nights'} selected</p>
         )}
         <p className='booknow__total'>Total Amount: ${totalAmount} CAD</p>
+      <button className='booknow__button-confirm'>Book Now</button>
       </div>
     </section>
   );
