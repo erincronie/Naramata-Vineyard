@@ -19,14 +19,14 @@
  
     &__item {
         width: 90vw; 
-        height: 20vh;
+        height: 40vh;
         margin: .35rem; 
         @include tablet {
             width: 40vw; 
             height: 30vh;
             margin: .35rem;
             @include desktop {
-                width: 20vw; 
+                width: 30vw; 
                 height: 20vh;
                 margin: .35rem;
             }

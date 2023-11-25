@@ -78,18 +78,22 @@
 
 
 .myCalendar {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include mobile-header;
     width: 100vw;
+    padding: 1rem;
     
 
     &__title {
-        @include mobile-header;
-          @include tablet {
-            @include tablet-header;
-          }
+        @include section-title;
+    }
+
+    &__border-bottom {
+      @include border-bottom;
+      width: 80vw;
     }
 
     &__selected-date {
