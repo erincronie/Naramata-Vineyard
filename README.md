@@ -183,29 +183,39 @@ Authorization Process:
 
 The Okanagan is a seasonal destination, the website will need to be functioning with the basic booking components by Spring time, which will allow myself more time this winter to add more features.
 
-two weeks time:
+# Phases:
 
-1. should have the main portion of the website, the designs with HTML and CSS
+## Phase One:
 
-December:
+- Create the website design, client repo
+  - Homepage
+  - Gallery
+  - Meet the Guests
+  - Booking calendar with rates → once paid, taken to a payment page
+  - Find Us
+  - Contact Us
+  - Policies
 
-1. Have booking calendar intergrated and functioning through APIs
+## Phase Two:
 
-2. Add weather API
+- Google Cloud integration, server repo
+  - MySQL integration
+  - Google authentication
+  - Google Calendar integration
+  - Google Analytics
+- Find payment provider
+  - Integrate payment provider to payment page
 
-3. Find safe payment payment processors to have the feature up and running
+## Phase Three:
 
-January:
+- Photoshoot of suite, property, and home
+  - Update images on homepage
+  - Add images to gallery
+- Deploy website
 
-1. Create database to hold booking details, customer accounts are not required at this time
+## Phase Four:
 
-2. Once payment processors, data base and calendar are functioning - guests will be able to book their reservations
-
-3. Main booking communication with be through email for the first year
-
-October 2024:
-
-1. with the summer over, take the time to review how the summer went and any new features we may need. ie. will it be more benefical to have customer accounts?
+- with the summer over, take the time to review how the summer went and any new features we may need. ie. will it be more benefical to have customer accounts?
 
 ## Nice-to-haves
 
@@ -220,3 +230,4 @@ Once our first season is complete, it will be a great time to reflect on what fe
 ## Design
 
 ![](color-palettes.png)
+![](sitemap.png)
