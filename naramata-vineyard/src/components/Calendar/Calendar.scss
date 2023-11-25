@@ -11,11 +11,11 @@
     
   &__navigation {
     display: flex;
-    background-color: $accent-color;
+    background-color: $background-color;
   }
 
   &__navigation__label {
-    background-color: $accent-color;
+    background-color: $background-color;
     border: none;
     margin: 0 auto;
     @include mobile-body;
@@ -25,7 +25,7 @@
   }
 
   &__navigation__arrow {
-    background-color: $accent-color;
+    background-color: $background-color;
     border: none;
     margin: .25rem;
     width: 50px;
@@ -53,7 +53,7 @@
   }
 
   &__tile {
-    background-color: $accent-color;
+    background-color: $background-color;
     color: black;
     border: none;
     font-size: 1.5rem;
@@ -72,28 +72,32 @@
   
   &__tile--active {
     background-color: $primary-color;
-    color: white;
+    color: $primary-text-color;
   }
 }
 
 
 .myCalendar {
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include mobile-header;
     width: 100vw;
+    padding: 1rem;
     
 
     &__title {
-        @include mobile-header;
-          @include tablet {
-            @include tablet-header;
-          }
+        @include section-title;
+    }
+
+    &__border-bottom {
+      @include border-bottom;
+      width: 80vw;
     }
 
     &__selected-date {
-        background-color: white;
+        background-color: $primary-text-color;
         padding: 1rem 2rem;
         margin: 1rem;
         width: 80vw;

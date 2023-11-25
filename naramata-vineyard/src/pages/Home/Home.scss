@@ -4,19 +4,22 @@
 .homepage {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: $primary-text-color;
     align-items: center;
+    background-color: $background-color;
 
-    &__upper-section {
-        @include tablet {
-            max-width: 80vw;
-            margin: 1rem;
-        }
+    &__upper-section,
+    &__lower-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 80vw;
     }
    
     &__title {
-        font-family: $secondary-font;
-        font-size: 2rem;
+       @include section-title;
+        margin: 1rem;
             @include tablet {
                 font-size: 3rem;
             }
@@ -43,11 +46,17 @@
     &__suite-description {
         @include mobile-body;
         margin: 1rem;
+        width: 50vw;
             @include tablet {
                 @include tablet-body;
                 margin: 3rem;
             }
         
+    }
+
+    &__border-bottom {
+        @include border-bottom;
+        width: 10vw;
     }
 
     &__image-placeholder {

@@ -9,6 +9,7 @@ const Gallery = () => {
   return (
     <section className='gallery'>
         <h2 className='gallery__title'>Gallery</h2>
+        <div className='gallery__border-bottom'></div>
     <div className="gallery__container">
       {placeholderIndices.map((index) => (
         <div

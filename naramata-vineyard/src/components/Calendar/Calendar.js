@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import './Calendar.scss';
 
-const MyCalendar = () => {
+const MyCalendar = ({ onSelect }) => {
   const [selectedRange, setSelectedRange] = useState([null, null]);
 
   const handleDateChange = (dates) => {
     setSelectedRange(dates);
+    // Pass selected dates to the parent component
+    onSelect && onSelect(dates);
   };
 
   const defaultActiveStartDate = new Date();
@@ -16,6 +18,7 @@ const MyCalendar = () => {
   return (
     <div className='myCalendar'>
       <h2 className='myCalendar__title'>Choose a date</h2>
+      <div className='myCalendar__border-bottom'></div>
       <p className='myCalendar__selected-date'>
         {selectedRange[0] && selectedRange[1] ? (
           <>
@@ -33,14 +36,8 @@ const MyCalendar = () => {
         minDate={minDate}
         maxDate={maxDate}
       />
-    
     </div>
   );
 }
 
 export default MyCalendar;
-
-
-
-
-

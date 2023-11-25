@@ -2,6 +2,7 @@
 @import '../../styles/partials/_mixins';
 
 .button {
+    background-color: $background-color;
     display: flex;
     justify-content: center;
     align-items: center;

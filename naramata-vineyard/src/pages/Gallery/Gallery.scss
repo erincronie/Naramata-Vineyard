@@ -2,11 +2,13 @@
 @import '../../styles/partials/_mixins';
 
 .gallery {
+    
     &__title {
-        @include mobile-header;
-        @include tablet {
-            @include tablet-header;
-        }
+        @include section-title;
+    }
+
+    &__border-bottom {
+        @include border-bottom;
     }
 
     &__container {
@@ -17,14 +19,14 @@
  
     &__item {
         width: 90vw; 
-        height: 20vh;
+        height: 40vh;
         margin: .35rem; 
         @include tablet {
             width: 40vw; 
             height: 30vh;
             margin: .35rem;
             @include desktop {
-                width: 20vw; 
+                width: 30vw; 
                 height: 20vh;
                 margin: .35rem;
             }

@@ -16,10 +16,16 @@
     line-height: 2rem;
   }
 
+  @mixin section-title {
+    font-family: $secondary-font;
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
   @mixin mobile-body {
     font-family: $main-font;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
   }
 
   @mixin tablet-header {
@@ -31,7 +37,7 @@
   @mixin tablet-body {
     font-family: $main-font;
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
   }
 
   @mixin navStyles {
@@ -49,11 +55,16 @@
     border: none;
     border-radius: 5px;
     &:hover {
-        background-color: $accent-color;
+        background-color: $base-color;
     }
   }
 
   @mixin border {
-    border: .25rem solid $secondary-color;
+    border: .10rem solid $secondary-color;
+  }
+
+  @mixin border-bottom {
+      border-bottom: 4px solid $secondary-color;
+        margin: 2rem;
   }
 
