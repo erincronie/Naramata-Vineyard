@@ -2,28 +2,40 @@
 @import '../../styles/partials/_mixins';
 
 .findus {
-    display: flex;
-    justify-content: center;
+    
 
     &__directions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
         margin: 1rem;
     }
 
     &__directions-title {
-        @include mobile-header;
-        @include tablet {
-            @include tablet-header;
-        }
+        @include section-title;
+        margin: 0 0 1rem 0;
+    }
+
+    &__border-bottom {
+        @include border-bottom;
+        width: 70vw;
     }
 
     &__location {
+        margin: 0.5rem 0;
         @include mobile-body;
         @include tablet {
             @include tablet-body;
         }
     }
     
-    &__direction-map {
-        width: 80vw;
+    &__directions-map {
+        width: 60vw;
+        height: 80vh;
+            @include tablet {
+                width: 80vw;
+            }
     }
 }
