@@ -7,7 +7,6 @@ const MyCalendar = ({ onSelect }) => {
 
   const handleDateChange = (dates) => {
     setSelectedRange(dates);
-    // Pass selected dates to the parent component
     onSelect && onSelect(dates);
   };
 

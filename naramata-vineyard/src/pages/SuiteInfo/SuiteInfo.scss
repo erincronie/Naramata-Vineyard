@@ -1,0 +1,43 @@
+@import '../../styles/partials/_variables';
+@import '../../styles/partials/_mixins';
+
+.suiteinfo {
+    background-color: $background-color;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    &__title {
+        @include section-title;
+        @include border-bottom;
+        padding: 1rem;
+    }
+
+    &__second-title {
+        @include section-title;
+    
+    }
+
+    &__text {
+        @include mobile-body;
+        max-width: 70vw;
+        text-align: center;
+        margin: 2rem;
+            @include tablet {
+                @include tablet-body;
+            }
+    }
+
+    &__img {
+        @include border;
+        width: 80vw;
+        padding: 5px;
+        margin: 2rem
+    }
+}

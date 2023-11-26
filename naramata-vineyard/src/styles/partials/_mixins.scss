@@ -19,7 +19,7 @@
   @mixin section-title {
     font-family: $secondary-font;
     font-size: 2rem;
-    margin: 1rem;
+    margin: 2rem;
   }
 
   @mixin mobile-body {
@@ -31,13 +31,13 @@
   @mixin tablet-header {
     font-family: $main-font;
     font-size: 2rem;
-    line-height: 2rem;
+    line-height: 3rem;
   }
 
   @mixin tablet-body {
     font-family: $main-font;
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 3rem;
   }
 
   @mixin navStyles {
