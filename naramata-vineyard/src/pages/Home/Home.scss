@@ -24,10 +24,10 @@
         top: 2%;
         left: 50%;
             @include tablet {
-                font-size: 6rem;
+                font-size: 3rem;
                 top: 5%;
             }       @include desktop {
-                    font-size: 8rem;
+                    font-size: 5rem;
             }
     }
 
@@ -57,12 +57,12 @@
     }
 
     &__image {
-        width: 40vw;
+        width: 60vw;
         margin:  1rem auto;
         padding: .5rem;
         @include border;
             @include tablet {
-                width: 80vw;
+                width: 60vw;
         } 
     }
 
@@ -70,6 +70,7 @@
         @include mobile-body;
         margin: 2rem;
         width: 60vw;
+        text-align: center;
             @include tablet {
                 @include tablet-body;
                 margin: 3rem;

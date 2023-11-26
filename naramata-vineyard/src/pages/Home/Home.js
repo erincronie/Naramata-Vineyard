@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <main className='homepage'>
             <Slideshow className='homepage__slideshow'/>
-            <h2 className='homepage__slideshow-title'>Weclome to Naramata Vineyard B&B</h2>
+            <h2 className='homepage__slideshow-title'>Weclome to Naramata Vineyard Bed and Breakfast</h2>
 
             <div className='homepage__upper-section'>
                 <h1 className='homepage__title'>Namasté Naramata</h1>
@@ -26,12 +26,13 @@ const Home = () => {
             
                 <img className='homepage__image' src={WineGlass} alt="" />            
                 <p className='homepage__suite-description'>Nestled in comfort and convenience, our inviting one-bedroom bed and breakfast ensures every stay is designed for your relaxation. With a well-appointed room featuring clean sheets, plush pillows, and all the essentials for a peaceful night's sleep, your comfort is our priority. For tech-savvy travelers, we offer free Wi-Fi, streaming services, and convenient USB charging ports. Enjoy a cozy atmosphere with amenities like a lounge, outdoor seating, and a fireplace. Explore the surrounding area with local recommendations on attractions and dining options. We're also pet-friendly and have eco-friendly initiatives in place. Whether you're here for leisure or business, our one-bedroom B&B provides a welcoming retreat with the perfect blend of comfort and charm.</p>
-             <div className='homepage__border-bottom'></div>
+             
              </div>
 
             <Amenities />
-
-            <img className='homepage__image' src={Dogs} alt="" />
+             <p className='homepage__suite-description'>Nurtured on three scenic acres, our Pinot Noir vineyard, established in 2010, showcases the artistry of winemaking. A decade of meticulous cultivation has yielded grapes of exceptional character, embodying the unique terroir of our land.</p>
+             <div className='homepage__border-bottom'></div>
+             <img className='homepage__image' src={Dogs} alt="" />
             <Map />
         </main>
     );

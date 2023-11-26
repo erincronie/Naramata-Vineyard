@@ -2,13 +2,18 @@
 @import '../../styles/partials/_mixins';
 
 .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     &__title {
         @include section-title;
+        padding: 1rem;
     }
 
     &__border-bottom {
         @include border-bottom;
+        width: 80vw;
     }
 
     &__container {
