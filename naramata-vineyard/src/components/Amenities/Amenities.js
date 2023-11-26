@@ -3,7 +3,7 @@ import amenitiesData from '../../data/amenities.json';
 import '../Amenities/Amenities.scss';
 
 const Amenities = () => {
-    const [isCollapsed, setIsCollapsed] = useState(true);
+    const [isCollapsed, setIsCollapsed] = useState(false); // Set initial state to false
 
     const toggleContentVisibility = () => {
         setIsCollapsed(!isCollapsed);
@@ -14,9 +14,9 @@ const Amenities = () => {
             <h2 className='amenities__main-title'>Amenities</h2>
             <div className='amenities__border-bottom'></div>
             <div className={`amenities__border ${isCollapsed ? 'collapsed' : ''}`}>
-                <button className='amenities__expand-button' onClick={toggleContentVisibility}>
-                    {isCollapsed ? 'Expand' : 'Collapse'}
-                </button>
+            <button className='amenities__expand-button' onClick={toggleContentVisibility}>
+                {isCollapsed ? 'Collapse' : 'Expand'}
+            </button>
                 <div className={`amenities__container ${isCollapsed ? 'collapsed' : ''}`}>
                     {Object.keys(amenitiesData).map((section, index) => {
                         const iconString = amenitiesData[section].icon;
@@ -39,6 +39,3 @@ const Amenities = () => {
 };
 
 export default Amenities;
-
-
-

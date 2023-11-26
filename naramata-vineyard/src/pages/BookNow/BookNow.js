@@ -48,8 +48,7 @@ const BookNow = () => {
         <p className='booknow__total'>Total Amount: ${totalAmount} CAD</p>
         <button className='booknow__button-confirm' onClick={handleBookNow}>Book Now</button>
       </div>
-
-      {/* Pop-up modal */}
+      
       {showPopup && (
         <div className='booknow__popup'>
           <div className='booknow__popup-content'>
