@@ -7,7 +7,6 @@ import slide4 from '../../assets/images/cat-2.jpeg';
 import slide5 from '../../assets/images/night-buddah.png';
 import slide6 from '../../assets/images/sunset-barrels.png';
 
-
 const Slideshow = () => {
   const slides = [slide1, slide2, slide3, slide4, slide5, slide6];
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -24,6 +23,7 @@ const Slideshow = () => {
 
   return (
     <div className='slideshow'>
+      <div className='slideshow__overlay'></div>
       <img
         className='slideshow__images'
         src={slides[currentSlide]}
