@@ -4,6 +4,7 @@ import './BookNow.scss';
 
 const BookNow = () => {
   const [selectedRange, setSelectedRange] = useState([null, null]);
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleDateSelection = (dates) => {
     setSelectedRange(dates);
@@ -19,10 +20,20 @@ const BookNow = () => {
     const endDate = selectedRange[1];
     const nights = Math.round(Math.abs((startDate - endDate) / oneDay));
 
-    return { totalAmount: nights * 100, nights }; // $100 CAD per night
+    return { totalAmount: nights * 100, nights };
   };
 
   const { totalAmount, nights } = calculateTotalAmount();
+
+  const handleBookNow = () => {
+    // Show the pop-up
+    setShowPopup(true);
+  };
+
+  const handlePopupClose = () => {
+    // Close the pop-up
+    setShowPopup(false);
+  };
 
   return (
     <section className='booknow'>
@@ -35,13 +46,20 @@ const BookNow = () => {
           <p className='booknow__selected-nights'>{nights} {nights === 1 ? 'night' : 'nights'} selected</p>
         )}
         <p className='booknow__total'>Total Amount: ${totalAmount} CAD</p>
-      <button className='booknow__button-confirm'>Book Now</button>
+        <button className='booknow__button-confirm' onClick={handleBookNow}>Book Now</button>
       </div>
+
+      {/* Pop-up modal */}
+      {showPopup && (
+        <div className='booknow__popup'>
+          <div className='booknow__popup-content'>
+            <span className='booknow__popup-close' onClick={handlePopupClose}>&times;</span>
+            <p className='booknow__popup-message'>Sorry, we are currently not taking bookings right now.</p>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
 
 export default BookNow;
-
-
-

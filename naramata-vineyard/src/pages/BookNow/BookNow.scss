@@ -43,4 +43,16 @@
         @include button;
     }
 
+    &__popup {
+        background-color: $primary-color;
+        height: 10rem;
+        width: 30rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    &__popup-message {
+        @include section-title;
+    }
+
 }
