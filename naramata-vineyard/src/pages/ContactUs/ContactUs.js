@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../ContactUs/ContactUs.scss';
 
 const ContactUs = () => {
-  // State for form fields
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -10,7 +10,6 @@ const ContactUs = () => {
     message: '',
   });
 
-  // Handle form field changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -18,8 +17,18 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add logic here for form submission (e.g., sending data to a server)
-    console.log('Form submitted:', formData);
+  
+    // Check for unfilled fields
+    const unfilledFields = Object.entries(formData).filter(([key, value]) => value === '');
+  
+    if (unfilledFields.length > 0) {
+      // Alert for unfilled fields
+      const missingFields = unfilledFields.map(([key]) => key).join(', ');
+      alert(`Please fill out the following fields: ${missingFields}`);
+    } else {
+      // Proceed with form submission
+      console.log('Form submitted:', formData);
+    }
   };
 
   return (
