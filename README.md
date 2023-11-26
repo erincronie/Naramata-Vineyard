@@ -227,7 +227,7 @@ Once our first season is complete, it will be a great time to reflect on what fe
 
 3. Mobile App, once guests have paid for their reservation, a link to a private app would be sent via email. This app would allow them to have access to a private messaging service, online service booking, weather information, local activities etc..
 
-## Design
+## Server
 
-![](color-palettes.png)
-![](sitemap.png)
+GitHub: https://github.com/erincronie/Naramata-Vineyard
+Please ask for collaborator access.
