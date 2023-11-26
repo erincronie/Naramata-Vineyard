@@ -16,7 +16,7 @@
         flex-direction: column;
         align-items: center;
         margin: 1rem;
-        padding: 1rem;
+        padding: 2rem;
         background-color: $base-color;
         color: $primary-text-color;
         width: 40vw;
@@ -47,8 +47,14 @@
         background-color: $primary-color;
         height: 10rem;
         width: 30rem;
-        margin: 1rem;
+        margin: 2rem;
+        padding: 2rem;
         text-align: center;
+            @include tablet {
+                padding: 3rem;
+                height: 12rem;
+                width: 35rem;
+            }
     }
 
     &__popup-message {
