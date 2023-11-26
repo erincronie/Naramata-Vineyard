@@ -229,5 +229,6 @@ Once our first season is complete, it will be a great time to reflect on what fe
 
 ## Server
 
-GitHub: https://github.com/erincronie/Naramata-Vineyard
+GitHub:naramata−vineyard−server(https://github.com/erincronie/naramata-vineyard-server)
+
 Please ask for collaborator access.
