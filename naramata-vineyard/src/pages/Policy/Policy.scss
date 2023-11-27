@@ -22,4 +22,12 @@
                 @include tablet-body;
             }
     }
+
+    &__button-container {
+        padding: 2rem;
+    }
+
+    &__button {
+        @include button;
+    }
 }
