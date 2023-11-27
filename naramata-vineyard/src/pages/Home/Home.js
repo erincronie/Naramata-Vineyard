@@ -1,4 +1,4 @@
-import '../Home/Home.scss'
+import '../Home/Home.scss';
 import React from "react";
 import Slideshow from '../../components/Slideshow/Slideshow';
 import Map from '../../components/Map/Map';
@@ -10,10 +10,11 @@ import Dogs from '../../assets/images/dogs.jpeg';
 const Home = () => {
     return (
         <main className='homepage'>
-            <Slideshow />
+            <Slideshow className='homepage__slideshow'/>
+            <h2 className='homepage__slideshow-title'>Weclome to Naramata Vineyard Bed and Breakfast</h2>
 
             <div className='homepage__upper-section'>
-                <h2 className='homepage__title'>Namasté Naramata</h2>
+                <h1 className='homepage__title'>Namasté Naramata</h1>
 
                 <p className='homepage__bio'>Indulge in the tranquility of our bed and breakfast nestled within a vineyard's embrace, where the subtle whispers of rustling vines and the serene ambiance of the rolling countryside create a peaceful escape. Our quiet retreat on the vineyard offers a calming haven for guests, inviting them to unwind amid the picturesque beauty of the winemaking landscape</p>
             <div className='homepage__border-bottom'></div>
@@ -25,12 +26,13 @@ const Home = () => {
             
                 <img className='homepage__image' src={WineGlass} alt="" />            
                 <p className='homepage__suite-description'>Nestled in comfort and convenience, our inviting one-bedroom bed and breakfast ensures every stay is designed for your relaxation. With a well-appointed room featuring clean sheets, plush pillows, and all the essentials for a peaceful night's sleep, your comfort is our priority. For tech-savvy travelers, we offer free Wi-Fi, streaming services, and convenient USB charging ports. Enjoy a cozy atmosphere with amenities like a lounge, outdoor seating, and a fireplace. Explore the surrounding area with local recommendations on attractions and dining options. We're also pet-friendly and have eco-friendly initiatives in place. Whether you're here for leisure or business, our one-bedroom B&B provides a welcoming retreat with the perfect blend of comfort and charm.</p>
-             <div className='homepage__border-bottom'></div>
+             
              </div>
 
             <Amenities />
-
-            <img className='homepage__image' src={Dogs} alt="" />
+             <p className='homepage__suite-description'>Nurtured on three scenic acres, our Pinot Noir vineyard, established in 2010, showcases the artistry of winemaking. A decade of meticulous cultivation has yielded grapes of exceptional character, embodying the unique terroir of our land.</p>
+             <div className='homepage__border-bottom'></div>
+             <img className='homepage__image' src={Dogs} alt="" />
             <Map />
         </main>
     );

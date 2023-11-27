@@ -26,28 +26,27 @@
     }
 
     &__title {
-        font-family: $secondary-font;
-        font-size: 1.5rem;
-        padding: 1rem 0 0 0;
+       @include section-title;
+       margin: 1rem;
         @include tablet {
-            padding: 0;
-            margin: 0 .5rem 0 0;
+            margin: 0;
         }
     
     }
 
     &__secondary-title {
-        @include mobile-body;
+        @include section-title;
+        margin: .5rem;
             @include tablet {
-                @include tablet-body;
+                margin: 1rem;
             }
-        
     }
 
     &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 1rem 0;
         @include mobile-body;
            @include tablet {
             flex-direction: row;
@@ -57,9 +56,8 @@
 
     &__item {
         @include navStyles;
-        @include mobile-header;
+        @include mobile-body;
             @include tablet {
-                @include tablet-body;
                 margin: .5rem;
             }
         &:hover {

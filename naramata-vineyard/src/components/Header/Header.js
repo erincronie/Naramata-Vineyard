@@ -6,7 +6,9 @@ const Header = () => {
     return(
    <nav className="nav">
     <div className="nav__title-section">
-        <h2 className="nav__title">Naramata Vineyard</h2>
+        <Link to="/">
+            <h2 className="nav__title">Naramata Vineyard</h2>
+        </Link>
         <h3 className='nav__secondary-title'>B&B</h3>
     </div>
 

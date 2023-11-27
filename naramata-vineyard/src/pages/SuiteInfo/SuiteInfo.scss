@@ -34,10 +34,13 @@
             }
     }
 
-    &__img {
+    &__image  {
         @include border;
         width: 80vw;
         padding: 5px;
-        margin: 2rem
+        margin: 2rem;
+            @include tablet {
+                width: 50vw;
+            }
     }
 }
