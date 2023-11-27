@@ -10,6 +10,7 @@ import BookNow from './pages/BookNow/BookNow';
 import ContactUs from './pages/ContactUs/ContactUs';
 import FindUs from './pages/FindUs/FindUs';
 import SuiteInfo from './pages/SuiteInfo/SuiteInfo';
+import Policy from './pages/Policy/Policy';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/findus" element={<FindUs />} />
         <Route path="/thesuite" element={<SuiteInfo />} />
+        <Route path="/policy" element={<Policy />} />
       </Routes>
       <Button />
       <Footer />
