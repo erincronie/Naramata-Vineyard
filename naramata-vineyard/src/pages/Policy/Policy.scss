@@ -22,8 +22,15 @@
                 @include tablet-body;
             }
     }
+
 }
 
-#comment {
-    height: 100px;
+
+    &__button-container {
+        padding: 2rem;
+    }
+
+    &__button {
+        @include button;
+    }
 }
