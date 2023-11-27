@@ -18,15 +18,13 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   
-    // Check for unfilled fields
     const unfilledFields = Object.entries(formData).filter(([key, value]) => value === '');
   
     if (unfilledFields.length > 0) {
-      // Alert for unfilled fields
+    
       const missingFields = unfilledFields.map(([key]) => key).join(', ');
       alert(`Please fill out the following fields: ${missingFields}`);
     } else {
-      // Proceed with form submission
       console.log('Form submitted:', formData);
     }
   };

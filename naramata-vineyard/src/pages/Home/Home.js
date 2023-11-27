@@ -6,6 +6,11 @@ import Pool from '../../assets/images/gradient-pool-homepage.png';
 import Amenities from '../../components/Amenities/Amenities'
 import WineGlass from '../../assets/images/wineglass-pool.JPG';
 import Dogs from '../../assets/images/dogs.jpeg';
+import ReviewForm from '../../components/ReviewForm/ReviewForm';
+
+const handleReviewSubmit = (reviewData) => {
+    console.log('Review submitted:', reviewData);
+};
 
 const Home = () => {
     return (
@@ -34,6 +39,7 @@ const Home = () => {
              <div className='homepage__border-bottom'></div>
              <img className='homepage__image' src={Dogs} alt="" />
             <Map />
+            <ReviewForm onSubmit={handleReviewSubmit} />
         </main>
     );
 }
