@@ -1,29 +1,48 @@
 @import '../../styles/partials/_variables';
 @import '../../styles/partials/_mixins';
 
-.policy {
-    margin: 2rem;
-    max-width: 70vw;;
+.review-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
 
     &__title {
         @include section-title;
         @include border-bottom;
     }
 
-    &__subtitle {
+    &__text {
+        text-align: center;
         @include mobile-header;
             @include tablet {
                 @include tablet-header;
             }
     }
-    &__text {
+
+    &__label {
+        padding: 1rem;
         @include mobile-body;
             @include tablet {
                 @include tablet-body;
             }
+    }
+
+    &__input {
+        border: none;
+        background-color: $background-color;
+        font-size: 1.5rem;
+        padding: 1rem;
+        @include border-bottom;
+        margin: 0;
+
+    }
+
+    &__button {
+        @include button;
     }
 }
 
 #comment {
     height: 100px;
 }
+
